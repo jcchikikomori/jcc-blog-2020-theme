@@ -1,7 +1,12 @@
 {
-  "name": "tonik/wordpress-theme-boilerplate",
-  "description": "A modern WordPress boilerplate for building organized and standardized themes",
-  "keywords": ["tonik", "theme", "boilerplate", "wordpress", "wordpress-starter-theme", "wordpress-theme"],
+  "name": "jcchikikomori/jcc-blog-2020-theme",
+  "description": "JCC Blog 2020 theme - Retro themed visuals",
+  "keywords": [
+    "tonik",
+    "theme",
+    "retro",
+    "wordpress"
+  ],
   "license": "MIT",
   "type": "wordpress-theme",
   "require": {
