@@ -1,10 +1,10 @@
-# Tonik — Wordpress Theme Boilerplate
+# JCC Blog Theme - Retro 2020
 
 > The `develop` branch tracks boilerplate development and it's not a stable code. If you want a stable version, use the [`master`](//github.com/tonik/wordpress-theme-boilerplate/tree/master) branch or one of the latest [releases](//github.com/tonik/wordpress-theme-boilerplate/releases).
 
 ### Boilerplate aims to be compatible with a large range of PHP versions, however, still have modern tooling for developing a theme.
 
- What's inside?
+What's inside?
 
 - [Gulp](//gulpjs.com/) - Task runner
 - [SASS](//sass-lang.com/) - a CSS preprocessor
@@ -19,9 +19,11 @@ The front-end builder was borrowed from our [html-frontend-boilerplate](https://
 ### Requirements
 
 Boilerplate follows a [WordPress minimal requirements](https://wordpress.org/about/requirements/). Make sure you have these dependences installed before moving on:
+
 - PHP >= 5.2.4
 
 Theme uses [NPM](//www.npmjs.com/) as a front-end dependency manager. Make sure your development machine has installed following dependencies:
+
 - [Node.js](//nodejs.org/)
 - [NPM](//www.npmjs.com/)
 
@@ -95,7 +97,6 @@ Great that you are considering supporting the project. You have a lot of ways to
 - Report an issue
 - Propose a feature
 - Send a pull request
-- Star project on the [GitHub](https://github.com/tonik/wordpress-theme-boilerplate)
 - Tell about project around your community
 
 ## License
