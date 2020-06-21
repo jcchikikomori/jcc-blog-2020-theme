@@ -15,7 +15,9 @@
     "lint": "npm run php:lint && npm run sass:lint && npm run javascript:lint",
     "precommit": "npm run lint"
   },
-  "dependencies": {},
+  "dependencies": {
+    "bootstrap": "^4.5.0"
+  },
   "devDependencies": {
     "babel-core": "^6.26.0",
     "babel-plugin-external-helpers": "^6.22.0",
