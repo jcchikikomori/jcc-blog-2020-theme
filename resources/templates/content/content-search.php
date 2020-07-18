@@ -8,7 +8,7 @@
 
 <section>
 	<?php while ( have_posts() ) : ?>
-		<article>
+		<article class="nes-container is-rounded is-dark">
 			<?php the_post(); ?>
 
 			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
