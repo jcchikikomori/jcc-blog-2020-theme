@@ -8,7 +8,7 @@
 
 <header class="header">
   <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg navbar navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar navbar-dark">
       <!-- <a class="navbar-brand" href="#">Navbar</a> -->
 
       <a class="navbar-brand" href="<?php echo esc_attr( get_site_url() ); ?>"

@@ -8,8 +8,12 @@
 
 <?php get_header(); ?>
 
-<main>
-	<?php get_template_part( 'resources/templates/content/content', 'search' ); ?>
-</main>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <?php get_template_part( 'resources/templates/content/content', 'search' ); ?>
+    </div>
+  </div>
+</div>
 
 <?php get_footer(); ?>

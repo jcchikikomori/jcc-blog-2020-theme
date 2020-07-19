@@ -11,10 +11,14 @@
 
 <?php get_header(); ?>
 
-<main>
-	<h1><?php the_title(); ?></h1>
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <h1><?php the_title(); ?></h1>
 
-	<p>This is a sample custom-template content. To edit this text, please modify 'template-sample.php' file</p>
-</main>
+      <p>This is a sample custom-template content. To edit this text, please modify 'template-sample.php' file</p>
+    </div>
+  </div>
+</div>
 
 <?php get_footer(); ?>
