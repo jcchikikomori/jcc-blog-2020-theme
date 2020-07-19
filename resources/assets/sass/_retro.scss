@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   margin: 0;
   font-size: 16px;
@@ -7,7 +11,8 @@ html {
     margin: 0 auto;
     padding: 0;
     background: $body-bg;
-    max-width: 1100px;
+
+    // max-width: 1100px;
   }
 }
 
@@ -23,10 +28,6 @@ img {
 
 main {
   padding: 15px;
-
-  * {
-    box-sizing: border-box;
-  }
 
   ul,
   ol {
@@ -74,10 +75,9 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px;
 
   .custom-logo {
-    width: 275px;
+    width: 160px;
   }
 }
 
@@ -96,9 +96,9 @@ a {
   height: 100%;
   width: 100%;
 
-  article {
-    width: 50vw;
-  }
+  // article {
+  //   width: 50vw;
+  // }
 }
 
 .logo {
