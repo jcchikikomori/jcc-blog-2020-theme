@@ -14,7 +14,7 @@
 <div class="container">
   <div class="row">
     <div class="col-12">
-      <h1><?php the_title(); ?></h1>
+      <h1 class="text-uppercase"><?php the_title(); ?></h1>
 
       <p>This is a sample custom-template content. To edit this text, please modify 'template-sample.php' file</p>
     </div>

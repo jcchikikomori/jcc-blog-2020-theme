@@ -13,7 +13,7 @@
     <div class="col-sm-8">
       <section>
         <article>
-          <h1><?php echo esc_html( 'Page not found', 'tonik' ); ?></h1>
+          <h1 class="text-uppercase"><?php echo esc_html( 'Page not found', 'tonik' ); ?></h1>
 
           <h2>
             <a href="<?php echo esc_attr( home_url() ); ?>">
