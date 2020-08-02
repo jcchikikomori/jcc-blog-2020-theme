@@ -2,6 +2,7 @@
 @import "variables";
 
 /* fonts */
-@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Open+Sans&display=swap");
 
-@include font("Orange Kid", "/app/themes/jcc-blog-2020-theme/public/fonts/OrangeKid-Regular");
+/* include Orange Kid */
+@include font($orange_kid, $orange_kid_dir);

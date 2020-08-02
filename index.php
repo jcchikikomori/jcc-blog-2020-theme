@@ -8,9 +8,9 @@
 
 <?php get_header(); ?>
 
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-sm-8">
+    <div class="col-12 col-md-8 p-3">
       <?php if ( have_posts() ) : ?>
       <?php if ( is_home() && is_front_page() ) : ?>
       <?php get_template_part( 'resources/templates/content/content' ); ?>
@@ -23,7 +23,7 @@
       <?php endif; ?>
       <?php endif; ?>
     </div>
-    <div class="col-sm-4">
+    <div class="col-12 col-md-4 p-3">
       <?php get_sidebar(); ?>
     </div>
   </div>

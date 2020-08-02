@@ -8,12 +8,12 @@
 
 <?php get_header(); ?>
 
-<div class="container">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-sm-8">
-      <section>
+    <div class="col-12 col-md-8 p-3">
+      <section class="nes-container is-rounded is-dark">
         <article>
-          <h1 class="text-uppercase"><?php echo esc_html( 'Page not found', 'tonik' ); ?></h1>
+          <h1 class="text-uppercase -title"><?php echo esc_html( 'Page not found', 'tonik' ); ?></h1>
 
           <h2>
             <a href="<?php echo esc_attr( home_url() ); ?>">
@@ -23,7 +23,7 @@
         </article>
       </section>
     </div>
-    <div class="col-sm-4">
+    <div class="col-12 col-md-4 p-3">
       <aside>
         <?php get_sidebar(); ?>
       </aside>

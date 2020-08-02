@@ -5,7 +5,7 @@
 ?>
 
 <header>
-  <h1 class="text-uppercase"><?php the_title(); ?></h1>
+  <h1 class="text-uppercase -title"><?php the_title(); ?></h1>
 
   <?php the_post_thumbnail(); ?>
 </header>

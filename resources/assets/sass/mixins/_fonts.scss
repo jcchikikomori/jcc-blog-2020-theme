@@ -3,6 +3,7 @@
     font-family: $font-family;
     src: url(""+$font-file+".eot");
     src:
+      url(""+$font-file+".otf") format("opentype"),
       url(""+$font-file+".eot?#iefix") format("embedded-opentype"),
       url(""+$font-file+".woff") format("woff"),
       url(""+$font-file+".woff2") format("woff"),

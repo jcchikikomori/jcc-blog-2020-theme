@@ -5,8 +5,11 @@
  * @link https://developer.wordpress.org/themes/basics/template-files/#template-partials
  */
 ?>
-		<?php get_template_part( 'resources/templates/parts/parts', 'footer' ); ?>
+</div>
 
-		<?php wp_footer(); ?>
-	</body>
+<?php get_template_part( 'resources/templates/parts/parts', 'footer' ); ?>
+<?php wp_footer(); ?>
+
+</body>
+
 </html>
