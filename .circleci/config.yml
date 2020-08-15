@@ -1,0 +1,27 @@
+# PHP CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-php/ for more details
+#
+version: 2
+jobs:
+  build:
+    docker:
+      # Specify the version you desire here
+      - image: thecodingmachine/php:7.2-v3-fpm-node10
+
+    steps:
+      - checkout
+      - run: composer install -n --prefer-dist
+      - run: npm install
+
+      # prepare the database
+      # - run: touch storage/testing.sqlite
+      # - run: php artisan migrate --env=testing --database=sqlite_testing --force
+
+      # run tests with phpunit or codecept
+      # - run: ./vendor/bin/phpunit
+      # - run: ./vendor/bin/codecept build
+      # - run: ./vendor/bin/codecept run
+
+      # run gulp tasks
+      - run: npm run prod
