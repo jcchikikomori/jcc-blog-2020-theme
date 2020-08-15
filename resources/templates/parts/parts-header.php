@@ -25,42 +25,32 @@
         <span class="navbar-toggler-icon"></span>
       </button>
 
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Link</a>
-          </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
-          </li>
-        </ul>
-        <form role="search" method="get" class="search-form form-inline my-2 my-lg-0"
-          action="<?php echo home_url( '/' ); ?>">
-          <label>
-            <span class="screen-reader-text"><?php echo _x( '', 'label' ) ?></span>
-            <input type="search" class="search-field form-control mr-sm-2"
-              placeholder="<?php echo esc_attr_x( 'Looking for ...', 'placeholder' ) ?>"
-              value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( '', 'label' ) ?>" />
-          </label>
-          <input type="submit" class="search-submit btn btn-outline-success my-2 my-sm-0"
-            value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>" />
-        </form>
-      </div>
+      <?php
+        wp_nav_menu([
+          'menu'            => 'top',
+          'theme_location'  => 'top',
+          'container'       => 'div',
+          'container_id'    => 'navbarSupportedContent',
+          'container_class' => 'collapse navbar-collapse',
+          'menu_id'         => false,
+          'menu_class'      => 'navbar-nav mr-auto',
+          'depth'           => 2,
+          'fallback_cb'     => 'bs4navwalker::fallback',
+          'walker'          => new bs4navwalker()
+        ]);
+      ?>
+
+      <form role="search" method="get" class="search-form form-inline my-2 my-lg-0"
+        action="<?php echo home_url( '/' ); ?>">
+        <label>
+          <span class="screen-reader-text"><?php echo _x( '', 'label' ) ?></span>
+          <input type="search" class="search-field form-control mr-sm-2"
+            placeholder="<?php echo esc_attr_x( 'Looking for ...', 'placeholder' ) ?>"
+            value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( '', 'label' ) ?>" />
+        </label>
+        <input type="submit" class="search-submit btn btn-outline-success my-2 my-sm-0"
+          value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>" />
+      </form>
     </nav>
   </div>
 
