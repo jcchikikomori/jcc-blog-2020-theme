@@ -12,6 +12,7 @@ jobs:
     steps:
       - checkout
       - run: composer install -n --prefer-dist
+      - run: npm install
 
       # prepare the database
       # - run: touch storage/testing.sqlite
