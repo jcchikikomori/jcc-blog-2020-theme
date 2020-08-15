@@ -8,7 +8,7 @@
 
 <?php get_header(); ?>
 
-<div class="container-fluid">
+<div class="container">
   <div class="row">
     <div class="col-12 col-md-8 p-3">
       <?php if ( have_posts() ) : ?>

@@ -6,7 +6,7 @@
  */
 ?>
 
-<section class="nes-container is-rounded is-dark">
+<section class="section-container">
   <h1>Search Results</h1>
 
   <?php while ( have_posts() ) : ?>

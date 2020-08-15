@@ -8,10 +8,10 @@
 
 <?php get_header(); ?>
 
-<div class="container-fluid">
+<div class="container">
   <div class="row">
     <div class="col-12 col-md-8 p-3">
-      <section class="nes-container is-rounded is-dark">
+      <section class="section-container">
         <article>
           <h1 class="text-uppercase -title"><?php echo esc_html( 'Page not found', 'tonik' ); ?></h1>
 

@@ -1,16 +1,20 @@
-// mixins
+// abstracts
 // ==========================================
-@import "mixins/fonts";
+@import "abstracts/base";
+
+// components
+// ==========================================
+@import "components/base";
 
 // helpers
 // ==========================================
-@import "helpers/core";
+@import "helpers/base";
 
 // vendors
 // ==========================================
 @import "vendors/bootstrap";
 @import "../../../node_modules/nes.css/scss/nes";
 
-// custom
+// themes
 // ==========================================
-@import "retro";
+@import "themes/default";

@@ -9,17 +9,16 @@
 <header class="header">
   <div class="container-fluid">
     <nav class="navbar navbar-expand-lg navbar navbar-dark">
-      <!-- <a class="navbar-brand" href="#">Navbar</a> -->
 
+      <?php if (has_custom_logo()) { ?>
+      <?php echo get_custom_logo(); ?>
+      <?php } else { ?>
       <a class="navbar-brand" href="<?php echo esc_attr( get_site_url() ); ?>"
         title="<?php echo esc_attr( 'Back to homepage', 'tonik' ); ?>">
-        <?php if (has_custom_logo()) { ?>
-        <?php echo get_custom_logo(); ?>
-        <?php } else { ?>
         <img src="<?php echo esc_html( get_template_directory_uri() ); ?>/public/images/ico/test.svg" class="logo"
           alt="logo" />
-        <?php } ?>
       </a>
+      <?php } ?>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -61,11 +60,6 @@
           <input type="submit" class="search-submit btn btn-outline-success my-2 my-sm-0"
             value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>" />
         </form>
-
-        <!-- <form class="form-inline my-2 my-lg-0">
-          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-        </form> -->
       </div>
     </nav>
   </div>

@@ -6,6 +6,6 @@
  */
 ?>
 
-<article class="article-container nes-container is-rounded is-dark">
+<article class="article-container">
   <?php get_template_part( 'resources/templates/common/common', 'article' ); ?>
 </article>
