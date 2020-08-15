@@ -48,6 +48,7 @@ img {
 }
 
 .wp-caption-text {
+  margin: 15px 0;
   color: $c_font_sub;
 }
 
@@ -87,6 +88,5 @@ a {
 .sidebar {
   flex: 0 1 auto;
   min-width: 30vw;
-
-  // padding: 15px;
+  margin-top: 1.6rem;
 }

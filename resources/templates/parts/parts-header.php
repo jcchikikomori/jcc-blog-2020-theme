@@ -33,24 +33,12 @@
           'container_id'    => 'navbarSupportedContent',
           'container_class' => 'collapse navbar-collapse',
           'menu_id'         => false,
-          'menu_class'      => 'navbar-nav mr-auto',
+          'menu_class'      => 'navbar-nav d-flex ml-auto p-2',
           'depth'           => 2,
           'fallback_cb'     => 'bs4navwalker::fallback',
           'walker'          => new bs4navwalker()
         ]);
       ?>
-
-      <form role="search" method="get" class="search-form form-inline my-2 my-lg-0"
-        action="<?php echo home_url( '/' ); ?>">
-        <label>
-          <span class="screen-reader-text"><?php echo _x( '', 'label' ) ?></span>
-          <input type="search" class="search-field form-control mr-sm-2"
-            placeholder="<?php echo esc_attr_x( 'Looking for ...', 'placeholder' ) ?>"
-            value="<?php echo get_search_query() ?>" name="s" title="<?php echo esc_attr_x( '', 'label' ) ?>" />
-        </label>
-        <input type="submit" class="search-submit btn btn-outline-success my-2 my-sm-0"
-          value="<?php echo esc_attr_x( 'Search', 'submit button' ) ?>" />
-      </form>
     </nav>
   </div>
 
