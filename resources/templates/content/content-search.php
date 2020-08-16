@@ -7,17 +7,16 @@
 ?>
 
 <section class="section-container">
-  <h1>Search Results</h1>
-
+  <?php if (have_posts()) : ?>
+  <h1 class="text-uppercase -title"><u>Search Results</u></h1>
   <?php while ( have_posts() ) : ?>
-  <article>
+  <article class="article-container">
     <?php the_post(); ?>
-    <article>
-      <a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-        <header><?php the_title(); ?></header>
-      </a>
-      <p><?php the_excerpt(); ?></p>
-    </article>
+    <?php get_template_part( 'resources/templates/common/common', 'article' ); ?>
   </article>
   <?php endwhile; ?>
+  <?php else : ?>
+  <h1 class="text-uppercase -title">OOPS!</h1>
+  <h2>No Results Found!</h2>
+  <?php endif; ?>
 </section>

@@ -19,6 +19,30 @@
 
 <body <?php body_class(); ?>>
 
+  <?php // TODO: Separate as a fragment ?>
+  <div class="modal-container">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12">
+          <!-- UNDER CONSTRUCTION MODAL -->
+          <dialog class="nes-dialog is-dark" id="dialog-dark">
+            <form method="dialog">
+              <p class="title">The current design was not yet done!</p>
+              <p>
+                Currently working for improvements then polishing before<br />
+                pushing to the first 'OFFICIAL' release.
+              </p>
+              <menu class="dialog-menu p-0 float-right">
+                <!-- <button class="nes-btn">Cancel</button> -->
+                <button id="dialog-dark-dismiss-btn" class="nes-btn is-primary">Okay</button>
+              </menu>
+            </form>
+          </dialog>
+        </div>
+      </div>
+    </div>
+  </div>
+
   <?php get_template_part( 'resources/templates/parts/parts', 'header' ); ?>
 
   <div class="content-container">

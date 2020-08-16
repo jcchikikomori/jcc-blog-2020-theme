@@ -85,8 +85,15 @@ a {
   width: 150px;
 }
 
-.sidebar {
-  flex: 0 1 auto;
-  min-width: 30vw;
-  margin-top: 1.6rem;
+.content-container {
+  .sidebar {
+    flex: 0 1 auto;
+    min-width: 30vw;
+  }
+
+  .sidebar,
+  .article-container,
+  .section-container {
+    margin-top: 1.6rem;
+  }
 }

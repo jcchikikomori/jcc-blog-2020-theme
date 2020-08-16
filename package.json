@@ -16,7 +16,9 @@
     "precommit": "npm run lint"
   },
   "dependencies": {
-    "bootstrap": "^4.5.0"
+    "bootstrap": "^4.5.0",
+    "dialog-polyfill": "^0.5.3",
+    "js-cookie": "^2.2.1"
   },
   "devDependencies": {
     "@tonik/eslint-config": "^1.1.1",

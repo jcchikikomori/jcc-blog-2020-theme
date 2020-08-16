@@ -8,8 +8,9 @@
       text-transform: uppercase;
     }
 
-    // .categories {}
-
-    // .pages {}
+    .categories,
+    .pages {
+      list-style: none;
+    }
   }
 }
