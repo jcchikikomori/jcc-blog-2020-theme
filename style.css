@@ -2,14 +2,14 @@
 This file is responsible only for providing theme information that are displayed
 in `Apperance > Themes`. Do not write in here any CSS declarations.
 
-Theme Name: Tonik WordPress Theme Boilerplate
-Theme URI: https://github.com/tonik/wordpress-theme-boilerplate
-Description: ES6, SCSS ready Wordpress boilerplate theme.
-Version: 1.0
+Theme Name: JCC Blog Theme
+Theme URI: https://github.com/jcchikikomori/jcc-blog-2020-theme
+Description: Powered by Tonik.
+Version: 0.5-beta
 Text Domain: tonik
-Author: Tonik
-Author URI: http://tonik.pl/
-Tags: wordpress, es6, scss, gulp, eslint, stylelint
+Author: John Cyrill Corsanes
+Author URI: https://jcchikikomori.github.com/
+Tags: wordpress, tonik, nes.css, dark-mode, es6, scss, gulp, eslint, stylelint
 License: GPLv2 License
 License URI: https://wordpress.org/about/gpl/
 */

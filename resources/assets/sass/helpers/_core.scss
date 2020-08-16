@@ -1,2 +1,7 @@
 /* core files makes larger project easier to manage */
-@import "variables";
+
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Open+Sans&display=swap");
+
+/* include Orange Kid */
+@include font($orange_kid, $orange_kid_dir);
