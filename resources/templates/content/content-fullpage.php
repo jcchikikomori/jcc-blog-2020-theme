@@ -7,5 +7,5 @@
 ?>
 
 <article>
-	<?php get_template_part( 'resources/templates/common/common', 'article' ); ?>
+  <?php get_template_part( 'resources/templates/common/common', 'article' ); ?>
 </article>

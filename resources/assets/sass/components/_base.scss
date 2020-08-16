@@ -1,8 +1,7 @@
-// colors
+// article
 // ==========================================
-$c_main: #0634a4;
-$c_secondary: #f4f6f9;
+@import "article/container";
 
-// fonts
+// sidebar
 // ==========================================
-$c_font: #000;
+@import "sidebar/default";

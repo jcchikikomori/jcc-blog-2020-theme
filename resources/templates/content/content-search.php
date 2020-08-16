@@ -6,16 +6,17 @@
  */
 ?>
 
-<section>
-	<?php while ( have_posts() ) : ?>
-		<article>
-			<?php the_post(); ?>
-
-			<a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>">
-				<article>
-					<header><?php the_title(); ?></header>
-				</article>
-			</a>
-		</article
-	<?php endwhile; ?>
+<section class="section-container">
+  <?php if (have_posts()) : ?>
+  <h1 class="text-uppercase -title"><u>Search Results</u></h1>
+  <?php while ( have_posts() ) : ?>
+  <article class="article-container">
+    <?php the_post(); ?>
+    <?php get_template_part( 'resources/templates/common/common', 'article' ); ?>
+  </article>
+  <?php endwhile; ?>
+  <?php else : ?>
+  <h1 class="text-uppercase -title">OOPS!</h1>
+  <h2>No Results Found!</h2>
+  <?php endif; ?>
 </section>

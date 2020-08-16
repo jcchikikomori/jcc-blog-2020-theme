@@ -1,0 +1,9 @@
+.header {
+  border-bottom: 1px solid white;
+
+  .navbar-nav {
+    > li + li {
+      margin-left: 1rem;
+    }
+  }
+}
