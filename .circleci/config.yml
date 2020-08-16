@@ -11,9 +11,9 @@ jobs:
 
     steps:
       - checkout
-      - run: sudo apt install -y tree
+      # - run: sudo apt install -y tree
       - run: composer install -n --prefer-dist
       - run: npm install
-      - run: tree node_modules/nes.css
+      # - run: tree node_modules/nes.css
       # run gulp tasks
       - run: npm run prod
